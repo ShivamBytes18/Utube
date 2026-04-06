@@ -23,12 +23,19 @@ export default function Navbar() {
     <div className="flex justify-between items-center p-4 bg-black text-white">
 
       {/* LOGO */}
-      <h1
-        className="text-xl font-bold cursor-pointer"
+      {/* <h1
+        className="text-xl  font-bold cursor-pointer"
         onClick={() => navigate("/")}
       >
-        MyTube
-      </h1>
+        UTube
+      </h1> */}
+
+        <h1
+      className="text-2xl font-bold cursor-pointer transition hover:text-red-500"
+        onClick={() => navigate("/")}
+     >
+        Utube
+     </h1>
 
       {/* RIGHT SIDE */}
       <div className="flex gap-4">
