@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { API } from "../api/axios";
+import { useNavigate } from "react-router-dom";
 
 export default function MyVideos() {
   const [videos, setVideos] = useState([]);
+  const navigate = useNavigate();
 
   const fetchVideos = async () => {
     const res = await API.get("/videos/my-videos");
@@ -20,12 +22,13 @@ export default function MyVideos() {
 
   return (
     <div className="p-4 text-white">
-      <h2 className="text-xl mb-4">My Videos</h2>
+      <h2 className="text-3xl font-bold pb-4">My Videos 🎥</h2>
 
       {videos.map((v) => (
         <div
           key={v._id}
           className="flex items-center gap-4 mb-4 bg-gray-900 p-3 rounded"
+          onClick={() => navigate(`/watch/${v._id}`)}
         >
           <img src={v.thumbnail} className="w-32 h-20 object-cover" />
 

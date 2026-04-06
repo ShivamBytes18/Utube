@@ -34,7 +34,7 @@ export default function History() {
   }, []);
 
   return (
-    <div className="grid grid-cols-3 gap-4 p-4">
+    <div className="grid grid-cols-3 gap-4 p-4 ">
       {videos.map((v) => (
         <div
           key={v._id}

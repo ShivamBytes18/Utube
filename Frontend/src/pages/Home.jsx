@@ -32,7 +32,7 @@ export default function Home() {
     <div className="p-4">
 
       {/* 🔥 HEADER */}
-      <h2 className="text-xl font-semibold mb-4 text-white">
+      <h2 className="text-2xl font-bold mb-4 text-white">
         Recommended Videos
       </h2>
 

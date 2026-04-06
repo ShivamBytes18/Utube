@@ -11,8 +11,8 @@ export default function Subscriptions() {
   }, []);
 
   return (
-    <div className="p-4 text-white">
-      <h2>Subscribed Channels</h2>
+    <div className="pl-1   text-white">
+      <h2 className="text-3xl font-bold pb-3">Subscribed Channels</h2>
 
       {channels.map((c) => (
         <div key={c._id} className="flex items-center gap-3 mt-2">

@@ -101,7 +101,7 @@ export default function Login() {
   return (
     <div className="flex justify-center items-center h-screen bg-gradient-to-br from-black via-gray-900 to-black">
 
-      {/* 🔥 CARD */}
+      {/*  CARD */}
       <div className="bg-gray-900/80 backdrop-blur-md p-8 rounded-2xl w-96 flex flex-col gap-5 shadow-2xl border border-gray-800">
 
         {/* 🔥 TITLE */}
