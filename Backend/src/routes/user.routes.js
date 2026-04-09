@@ -62,6 +62,7 @@ import {
 import { upload } from "../middlewares/multer.middleware.js";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
 
+
 const router = Router();
 
 // public routes

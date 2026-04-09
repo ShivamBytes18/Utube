@@ -48,7 +48,7 @@ export default function Navbar() {
 
             <button
               onClick={handleLogout}
-              className="bg-red-500 px-3 py-1 rounded"
+              className="bg-purple-700 px-3 py-1 rounded"
             >
               Logout
             </button>
@@ -56,7 +56,7 @@ export default function Navbar() {
         ) : (
           <button
             onClick={() => navigate("/login")}
-            className="bg-blue-500 px-3 py-1 rounded"
+            className="bg-red-500 px-3 py-1 rounded"
           >
             Login
           </button>
